@@ -41,4 +41,16 @@ it('given action type of get headlines failure, updates error and isLoading stat
       error: 'An error'
     })
   })
+
+  it('given action type of get headlines success, updates headline and isLoading state', () => {
+    const action = {
+      type: c.GET_HEADLINES_SUCCESS,
+      headline: 'A headline'
+    }
+    expect(headlinesReducer(loadingState, action)).toEqual({
+      isLoading: false,
+      headlines: ['A headline'],
+      error: null
+    })
+  })
 })
