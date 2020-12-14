@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { makeApiCall } from './../actions';
 
 
-class Headlines extends Component () {
+class Headlines extends Component {
   constructor(props) {
     super(props);
   }
