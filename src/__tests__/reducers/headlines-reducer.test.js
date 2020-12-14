@@ -45,11 +45,11 @@ it('given action type of get headlines failure, updates error and isLoading stat
   it('given action type of get headlines success, updates headline and isLoading state', () => {
     const action = {
       type: c.GET_HEADLINES_SUCCESS,
-      headline: 'A headline'
+      headlines: 'A headline'
     }
     expect(headlinesReducer(loadingState, action)).toEqual({
       isLoading: false,
-      headlines: ['A headline'],
+      headlines: 'A headline',
       error: null
     })
   })
