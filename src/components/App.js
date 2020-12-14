@@ -1,5 +1,5 @@
 import React from 'react';
-import Headlines from './headlines';
+import Headlines from './Headlines';
 
 function App() {
   return (

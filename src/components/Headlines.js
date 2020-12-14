@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { MakeApiCall } from './../actions';
+import { makeApiCall } from './../actions';
 
 
 class Headlines extends Component () {
