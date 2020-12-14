@@ -4,6 +4,6 @@ let initialState = {
   error: null
 }
 
-export default (state= initialState, action) = {
+export default (state=initialState, action) => {
 
 }
