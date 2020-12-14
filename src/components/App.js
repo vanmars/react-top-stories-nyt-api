@@ -1,11 +1,11 @@
-
-import './App.css';
+import React from 'react';
+import Headlines from './headlines';
 
 function App() {
   return (
-    <div className="App">
-    
-    </div>
+    <React.Fragment>
+      <Headlines />
+    </React.Fragment>
   );
 }
 
