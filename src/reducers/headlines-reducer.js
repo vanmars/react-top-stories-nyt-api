@@ -5,5 +5,10 @@ let initialState = {
 }
 
 export default (state=initialState, action) => {
-  return state;
+  switch(action.type) {
+    case c.REQUEST_HEADLINES:
+      // Code
+    default:
+      return state;
+  }
 }
