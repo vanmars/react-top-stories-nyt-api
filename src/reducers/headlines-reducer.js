@@ -1,15 +1,15 @@
 import * as c from './../actions/ActionTypes';
 
-let initialState = {
+let defaultState = {
   isLoading: false,
   headlines: [],
   error: null
 }
 
-export default (state=initialState, action) => {
+export default (state=defaultState, action) => {
   switch(action.type) {
     case c.REQUEST_HEADLINES:
-      // Code
+      return Object.assign({}, state, {isLoading: true})
     default:
       return state;
   }

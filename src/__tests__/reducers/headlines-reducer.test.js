@@ -2,14 +2,14 @@ import headlinesReducer from './../../reducers/headlines-reducer'
 import * as c from './../../actions/ActionTypes'
 
 describe ('headlinesReducer', () => {
-  let initialState = {
+  let defaultState = {
     isLoading: false,
     headlines: [],
     error: null
   }
 
   it('returns default state given an action type of null', () => {
-    expect(headlinesReducer(initialState, {type: null})).toEqual({
+    expect(headlinesReducer(defaultState, {type: null})).toEqual({
       isLoading: false,
       headlines: [],
       error: null
@@ -17,7 +17,7 @@ describe ('headlinesReducer', () => {
   })
 
   it('given action type of request headlines, changes state to isLoading true', () => {
-    expect(headlinesReducer(initialState, {type: c.REQUEST_HEADLINES})).toEqual({
+    expect(headlinesReducer(defaultState, {type: c.REQUEST_HEADLINES})).toEqual({
       isLoading: true,
       headlines: [],
       error: null
